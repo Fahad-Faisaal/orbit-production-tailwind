@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orbit Production</title>
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- tailwind script -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- customization -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          fontFamily: {
+            bebas: ['Bebas Neue', 'cursive'],
+            monts: ['Montserrat', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-monts">
+  <header>
+    <!-- navbar -->
+    <nav class="font-bebas container mx-auto px-4 h-20 flex justify-between items-center">
+      <h1 class="text-2xl sm:text-3xl text-slate-900 cursor-pointer">Orbit Production House</h1>
+      <ul class="flex items-center gap-4 sm:gap-10">
+        <li class="sm:text-lg text-slate-900 cursor-pointer hover:text-slate-700">Our Movies</li>
+        <li class="sm:text-lg text-slate-900 cursor-pointer hover:text-slate-700"">About Us</li>
+        <li class="sm:text-lg text-slate-900 cursor-pointer hover:text-slate-700"">Services</li>
+      </ul>
+    </nav>
+    <!-- end of navbar -->
+  </header>
+
+  <main>
+    <!-- banner -->
+    <section class="h-screen bg-[url('./images/banner.jpg')] bg-cover bg-no-repeat bg-black bg-opacity-60 bg-blend-overlay flex items-center">
+      <div class="ml-10 sm:ml-20 sm:w-1/2">
+        <p class="text-white text-lg sm:text-xl mb-1">Movie production studio</p>
+        <h1 class="uppercase font-bold text-4xl sm:text-6xl mb-2">
+          <span class="text-white">Films MAde to</span> 
+          <br>
+          <span class="text-amber-300">Perfection</span>
+        </h1>
+        <p class="text-white text-lg sm:text-xl mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam officiis nisi deserunt.</p>
+        <button class="text-white font-semibold py-2 px-5 border-2 rounded-md transition-all hover:bg-amber-300 hover:text-slate-900">Discover More</button>
+      </div>
+    </section>
+    <!-- end of banner -->
+  </main>
+</body>
+</html>
