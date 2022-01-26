@@ -34,12 +34,12 @@
 <body class="font-monts">
   <header>
     <!-- navbar -->
-    <nav class="font-bebas container mx-auto px-4 h-20 flex justify-between items-center">
+    <nav class="font-bebas container mx-auto px-4 sm:px-7 h-20 flex justify-between items-center">
       <h1 class="text-2xl sm:text-3xl text-slate-900 cursor-pointer">Orbit Production House</h1>
       <ul class="flex items-center gap-4 sm:gap-10">
-        <li class="sm:text-lg text-slate-900 cursor-pointer hover:text-slate-700">Our Movies</li>
-        <li class="sm:text-lg text-slate-900 cursor-pointer hover:text-slate-700"">About Us</li>
-        <li class="sm:text-lg text-slate-900 cursor-pointer hover:text-slate-700"">Services</li>
+        <li class="hidden sm:block text-slate-900 text-lg cursor-pointer hover:text-slate-700">Our Movies</li>
+        <li class="hidden sm:block text-slate-900 text-lg cursor-pointer hover:text-slate-700"">About Us</li>
+        <li class="hidden sm:block text-slate-900 text-lg cursor-pointer hover:text-slate-700"">Services</li>
       </ul>
     </nav>
     <!-- end of navbar -->
@@ -47,7 +47,7 @@
 
   <main>
     <!-- banner -->
-    <section class="h-screen bg-[url('./images/banner.jpg')] bg-cover bg-no-repeat bg-black bg-opacity-60 bg-blend-overlay flex items-center">
+    <section class="h-96 sm:h-screen bg-[url('./images/banner.jpg')] bg-cover bg-center bg-no-repeat bg-black bg-opacity-60 bg-blend-overlay flex items-center mb-10 sm:mb-24">
       <div class="ml-10 sm:ml-20 sm:w-1/2">
         <p class="text-white text-lg sm:text-xl mb-1">Movie production studio</p>
         <h1 class="uppercase font-bold text-4xl sm:text-6xl mb-2">
@@ -55,11 +55,50 @@
           <br>
           <span class="text-amber-300">Perfection</span>
         </h1>
-        <p class="text-white text-lg sm:text-xl mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam officiis nisi deserunt.</p>
+        <p class="text-white text-lg sm:text-xl mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam officiis nisi deserunt.</p>
         <button class="text-white font-semibold py-2 px-5 border-2 rounded-md transition-all hover:bg-amber-300 hover:text-slate-900">Discover More</button>
       </div>
     </section>
     <!-- end of banner -->
+
+    <!-- about -->
+    <section class="container mx-auto px-4">
+      <div class="border-2 border-slate-700 p-7">
+        <div class="lg:flex items-center gap-16">
+          <div class="bg-[url('./images/camera-man.jpg')] bg-cover bg-center bg-no-repeat h-[500px] w-full lg:w-1/2 flex items-end justify-center mb-10"> 
+            <h1 class="font-bebas text-slate-900 bg-white text-xl sm:text-2xl text-center w-11/12 rounded-md drop-shadow-2xl p-1 -mb-6">23 years of experience</h1>  
+          </div>
+          <div class="lg:w-1/2">
+            <p class="mt-5 lg:mt-0 text-xl sm:text-2xl font-semibold mb-2 sm:mb-3">About us</p>
+
+            <h1 class="text-slate-900 capitalize text-4xl sm:text-5xl font-bold sm:font-semibold tracking-tight mb-3 sm:mb-4">
+              FIlming Experience <br>
+              Just Got Better
+            </h1>
+
+            <p class="text-slate-900 font-medium text-justify text-lg sm:text-xl mb-4 sm:mb-5">Primis lobortis adipiscing imperdiet dis ultricies. Id commodo interdum fermentum pede dictumst ipsum. Erat sapien phasellus suspendisse natoque nulla leo ornare mi. Pretium rhoncus venenatis ante dignissim aliquet faucibus tempus etiam feugiat.</p>
+
+            <button class="text-slate-900 font-semibold py-2 px-5 border-2 border-slate-700 rounded-md transition-all hover:bg-amber-300 hover:text-slate-900">Discover More</button>
+          </div>
+        </div>
+
+        <div class="space-y-10 sm:space-y-0 sm:grid md:grid-cols-2 lg:grid-cols-3 gap-14 mt-16">
+          <div class="border-t-4 border-slate-900">
+            <h1 class="font-bebas text-5xl pt-6 mb-2">Our Vision</h1>
+            <p class="text-slate-900 text-lg font-medium text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+          </div>
+          <div class="border-t-4 border-slate-900">
+            <h1 class="font-bebas text-5xl pt-6 mb-2">Our Mision</h1>
+            <p class="text-slate-900 text-lg font-medium text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+          </div>
+          <div class="border-t-4 border-slate-900">
+            <h1 class="font-bebas text-5xl pt-6 mb-2">Our Goal</h1>
+            <p class="text-slate-900 text-lg font-medium text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of about -->
   </main>
 </body>
 </html>
